@@ -94,6 +94,7 @@ PROGRAMS := \
 	canplayer \
 	cansend \
 	cansniffer \
+	canstream \
 	log2asc \
 	log2long \
 	mcp251xfd-dump \
@@ -117,6 +118,7 @@ cangen.o:	lib.h
 canlogserver.o:	lib.h
 canplayer.o:	lib.h
 cansend.o:	lib.h
+canstream.o:	lib.h
 log2asc.o:	lib.h
 log2long.o:	lib.h
 j1939acd.o:	libj1939.h
@@ -133,6 +135,7 @@ canlogserver:	canlogserver.o	lib.o
 canplayer:	canplayer.o	lib.o
 cansend:	cansend.o	lib.o
 cansequence:	cansequence.o	lib.o
+canstream:	canstream.o	lib.o
 log2asc:	log2asc.o	lib.o
 log2long:	log2long.o	lib.o
 j1939acd:	j1939acd.o	libj1939.o

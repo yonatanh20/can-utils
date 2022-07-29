@@ -1,0 +1,59 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/johnny/Projects/can-utils'
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   cangw.c   -o cangw
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   isotpdump.c   -o isotpdump
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   isotpperf.c   -o isotpperf
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   isotprecv.c   -o isotprecv
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   isotpsend.c   -o isotpsend
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   isotpserver.c   -o isotpserver
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   isotpsniffer.c   -o isotpsniffer
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   isotptun.c   -o isotptun
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o j1939acd.o j1939acd.c
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o libj1939.o libj1939.c
+cc   j1939acd.o libj1939.o   -o j1939acd
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o j1939cat.o j1939cat.c
+cc   j1939cat.o libj1939.o   -o j1939cat
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o j1939spy.o j1939spy.c
+cc   j1939spy.o libj1939.o   -o j1939spy
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o j1939sr.o j1939sr.c
+cc   j1939sr.o libj1939.o   -o j1939sr
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o testj1939.o testj1939.c
+cc   testj1939.o libj1939.o   -o testj1939
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   slcan_attach.c   -o slcan_attach
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   slcand.c   -o slcand
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o asc2log.o asc2log.c
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o lib.o lib.c
+cc   asc2log.o lib.o   -o asc2log
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   bcmserver.c   -o bcmserver
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   can-calc-bit-timing.c   -o can-calc-bit-timing
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o canbusload.o canbusload.c
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o canframelen.o canframelen.c
+cc   canbusload.o canframelen.o   -o canbusload
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o candump.o candump.c
+cc   candump.o lib.o   -o candump
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   canfdtest.c   -o canfdtest
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o cangen.o cangen.c
+cc   cangen.o lib.o   -o cangen
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o cansequence.o cansequence.c
+cc   cansequence.o lib.o   -o cansequence
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o canlogserver.o canlogserver.c
+cc   canlogserver.o lib.o   -o canlogserver
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o canplayer.o canplayer.c
+cc   canplayer.o lib.o   -o canplayer
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o cansend.o cansend.c
+cc   cansend.o lib.o   -o cansend
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   cansniffer.c   -o cansniffer
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o canstream.o canstream.c
+cc   canstream.o lib.o   -o canstream
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o log2asc.o log2asc.c
+cc   log2asc.o lib.o   -o log2asc
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o log2long.o log2long.c
+cc   log2long.o lib.o   -o log2long
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o mcp251xfd/mcp251xfd-dev-coredump.o mcp251xfd/mcp251xfd-dev-coredump.c
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o mcp251xfd/mcp251xfd-dump.o mcp251xfd/mcp251xfd-dump.c
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o mcp251xfd/mcp251xfd-main.o mcp251xfd/mcp251xfd-main.c
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -c -o mcp251xfd/mcp251xfd-regmap.o mcp251xfd/mcp251xfd-regmap.c
+cc  mcp251xfd/mcp251xfd-dev-coredump.o mcp251xfd/mcp251xfd-dump.o mcp251xfd/mcp251xfd-main.o mcp251xfd/mcp251xfd-regmap.o  -o mcp251xfd-dump
+cc -O2 -Wall -Wno-parentheses -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   slcanpty.c   -o slcanpty
+make: Leaving directory '/home/johnny/Projects/can-utils'
+ 

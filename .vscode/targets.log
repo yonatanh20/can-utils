@@ -1,0 +1,666 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'cangw', needed by 'all'.
+make: *** No rule to make target 'isotpdump', needed by 'all'.
+make: *** No rule to make target 'isotpperf', needed by 'all'.
+make: *** No rule to make target 'isotprecv', needed by 'all'.
+make: *** No rule to make target 'isotpsend', needed by 'all'.
+make: *** No rule to make target 'isotpserver', needed by 'all'.
+make: *** No rule to make target 'isotpsniffer', needed by 'all'.
+make: *** No rule to make target 'isotptun', needed by 'all'.
+make: *** No rule to make target 'libj1939.o', needed by 'j1939acd'.
+make: *** No rule to make target 'slcan_attach', needed by 'all'.
+make: *** No rule to make target 'slcand', needed by 'all'.
+make: *** No rule to make target 'lib.o', needed by 'asc2log'.
+make: *** No rule to make target 'bcmserver', needed by 'all'.
+make: *** No rule to make target 'can-calc-bit-timing', needed by 'all'.
+make: *** No rule to make target 'canbusload.o', needed by 'canbusload'.
+make: *** No rule to make target 'canfdtest', needed by 'all'.
+make: *** No rule to make target 'cansequence.o', needed by 'cansequence'.
+make: *** No rule to make target 'cansniffer', needed by 'all'.
+make: *** No rule to make target 'mcp251xfd/mcp251xfd-dev-coredump.o', needed by 'mcp251xfd-dump'.
+make: *** No rule to make target 'mcp251xfd/mcp251xfd-dump.o', needed by 'mcp251xfd-dump'.
+make: *** No rule to make target 'mcp251xfd/mcp251xfd-main.o', needed by 'mcp251xfd-dump'.
+make: *** No rule to make target 'mcp251xfd/mcp251xfd-regmap.o', needed by 'mcp251xfd-dump'.
+make: *** No rule to make target 'slcanpty', needed by 'all'.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Jul 29 16:42:02 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 42)
+PREFIX = /usr/local
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# default
+.SHELLFLAGS := -c
+# environment
+NVM_INC = /home/johnny/.nvm/versions/node/v17.6.0/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 48)
+CPPFLAGS = -Iinclude -DAF_CAN=PF_CAN -DPF_CAN=29 -DSO_RXQ_OVFL=40 -DSCM_TIMESTAMPING_OPT_STATS=54 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE
+# environment
+PLATFORMIO_IDE = 2.5.1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/johnny/Projects/can-utils
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /home/johnny/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/node
+# makefile (from 'Makefile', line 46)
+CFLAGS := -O2 -Wall -Wno-parentheses
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+P9K_SSH = 0
+# environment
+VSCODE_CWD = /mnt/c/Users/yonat/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# makefile (from 'Makefile', line 80)
+PROGRAMS := cangw isotpdump isotpperf isotprecv isotpsend isotpserver isotpsniffer isotptun j1939acd j1939cat j1939spy j1939sr testj1939 slcan_attach slcand asc2log bcmserver can-calc-bit-timing canbusload candump canfdtest cangen cansequence canlogserver canplayer cansend cansniffer canstream log2asc log2long mcp251xfd-dump slcanpty
+# environment
+NVM_BIN = /home/johnny/.nvm/versions/node/v17.6.0/bin
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-947f64a7-d9b0-439f-90ee-385f2adfd1b1.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+WSL2_GUI_APPS_ENABLED = 1
+# environment
+PWD = /home/johnny/Projects/can-utils
+# default
+.LOADED := 
+# environment
+WSL_INTEROP = /run/WSL/7099_interop
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/johnny
+# environment
+LOGNAME = johnny
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+NVM_CD_FLAGS = -q
+# environment
+ZSH = /home/johnny/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+PLATFORMIO_PATH = /home/johnny/.platformio/penv/bin:/home/johnny/.platformio/penv:/home/johnny/.platformio/python3/bin:/home/johnny/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/remote-cli:/home/johnny/.nvm/versions/node/v17.6.0/bin:/home/johnny/Projects/Formula/socketCan_build:/home/johnny/Applications/android/platform-tools:/home/johnny/Applications/android/emulator:/home/johnny/Applications/android/cmdline-tools/6.0/bin:/home/johnny/Applications/flutter/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.292-2/bin:/mnt/c/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.292-2/jre/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/yonat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/yonat/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/yonat/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yonat/AppData/Local/Programs/Python/Python39:/mnt/c/Users/yonat/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Util:/mnt/c/Users/yonat/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/mnt/c/Program Files/Racket:/mnt/c/Users/yonat/AppData/Local/Android/Sdk:
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PATH = /home/johnny/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/remote-cli:/home/johnny/.nvm/versions/node/v17.6.0/bin:/home/johnny/Projects/Formula/socketCan_build:/home/johnny/Applications/android/platform-tools:/home/johnny/Applications/android/emulator:/home/johnny/Applications/android/cmdline-tools/6.0/bin:/home/johnny/Applications/flutter/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.292-2/bin:/mnt/c/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.292-2/jre/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/yonat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/yonat/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/yonat/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yonat/AppData/Local/Programs/Python/Python39:/mnt/c/Users/yonat/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Util:/mnt/c/Users/yonat/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/mnt/c/Program Files/Racket:/mnt/c/Users/yonat/AppData/Local/Android/Sdk:
+# environment
+SHLVL = 0
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = johnny
+# makefile
+.DEFAULT_GOAL := all
+# environment
+NAME = JohnnyPC
+# makefile (from 'Makefile', line 41)
+DESTDIR = 
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/yonat/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# makefile (from 'Makefile', line 60)
+PROGRAMS_ISOTP := isotpdump isotpperf isotprecv isotpsend isotpserver isotpsniffer isotptun
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = kpqrR
+# environment
+MFLAGS = -kpqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/johnny/.nvm
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# makefile (from 'Makefile', line 76)
+PROGRAMS_SLCAN := slcan_attach slcand
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 57)
+PROGRAMS_CANGW := cangw
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 69)
+PROGRAMS_J1939 := j1939acd j1939cat j1939spy j1939sr testj1939
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+WAYLAND_DISPLAY = wayland-0
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+WSL_DISTRO_NAME = Ubuntu
+# variable set hash-table stats:
+# Load=87/1024=8%, Rehash=0, Collisions=7/121=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 244020): 62 files, no impossibilities.
+
+# 62 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+lib.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 16:35:10.2053711
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+slcanpty:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+asc2log: asc2log.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+asc2log.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+canframelen.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 16:35:10.2053711
+#  File has been updated.
+#  Successfully updated.
+
+cansequence: cansequence.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+cansequence.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+all: cangw isotpdump isotpperf isotprecv isotpsend isotpserver isotpsniffer isotptun j1939acd j1939cat j1939spy j1939sr testj1939 slcan_attach slcand asc2log bcmserver can-calc-bit-timing canbusload candump canfdtest cangen cansequence canlogserver canplayer cansend cansniffer canstream log2asc log2long mcp251xfd-dump slcanpty
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+log2asc: log2asc.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+log2long.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+log2asc.o: lib.h
+#  Implicit rule search has been done.
+ 
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+isotptun:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+j1939acd: j1939acd.o libj1939.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+canstream: canstream.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+canstream.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+isotpsniffer:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+canlogserver.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+canlogserver: canlogserver.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+mcp251xfd/mcp251xfd-dev-coredump.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+distclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 113):
+	rm -f $(PROGRAMS) $(LIBRARIES) *~
+
+candump.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+candump: candump.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+cangen: cangen.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+cangen.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 16:41:57.5353711
+#  File has been updated.
+#  Successfully updated.
+
+canplayer.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+canplayer: canplayer.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+j1939spy.o: libj1939.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+j1939spy: j1939spy.o libj1939.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+slcan_attach:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+canbusload: canbusload.o canframelen.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+mcp251xfd-dump: mcp251xfd/mcp251xfd-dev-coredump.o mcp251xfd/mcp251xfd-dump.o mcp251xfd/mcp251xfd-main.o mcp251xfd/mcp251xfd-regmap.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+#  recipe to execute (from 'Makefile', line 149):
+	$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
+
+# Not a target:
+canbusload.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+libj1939.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+can-calc-bit-timing:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+cansend: cansend.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+cansend.o: lib.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+lib.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+canfdtest:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+mcp251xfd/mcp251xfd-regmap.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+canframelen.o: canframelen.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mcp251xfd/mcp251xfd-main.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+j1939sr.o: libj1939.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+j1939sr: j1939sr.o libj1939.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+libj1939.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 16:35:10.2053711
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	rm -f $(PROGRAMS) *.o mcp251xfd/*.o
+
+# Not a target:
+cansniffer:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+isotpdump:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+isotprecv:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+mcp251xfd/mcp251xfd-dump.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+isotpserver:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+slcand:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+isotpperf:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+ 
+
+j1939cat.o: libj1939.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+testj1939: testj1939.o libj1939.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+j1939cat: j1939cat.o libj1939.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+j1939acd.o: libj1939.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bcmserver:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+cangw:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+isotpsend:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+testj1939.o: libj1939.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+log2long: log2long.o lib.o
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 109):
+	mkdir -p $(DESTDIR)$(PREFIX)/bin
+	cp -f $(PROGRAMS) $(DESTDIR)$(PREFIX)/bin
+
+# files hash-table stats:
+# Load=65/1024=6%, Rehash=0, Collisions=13/177=7%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 125 / storage = 1442 B / avg = 11 B
+# current buf: size = 8162 B / used = 1442 B / count = 125 / avg = 11 B
+
+# strcache performance: lookups = 227 / hit rate = 44%
+# hash-table stats:
+# Load=125/8192=2%, Rehash=0, Collisions=2/227=1%
+# Finished Make data base on Fri Jul 29 16:42:02 2022
+
+ 

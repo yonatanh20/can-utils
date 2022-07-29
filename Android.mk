@@ -161,6 +161,22 @@ LOCAL_CFLAGS := $(PRIVATE_LOCAL_CFLAGS)
 include $(BUILD_EXECUTABLE)
 
 #
+# canstream
+#
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := canstream.c
+LOCAL_MODULE := canstream
+LOCAL_MODULE_TAGS := optional
+LOCAL_STATIC_LIBRARIES := libcan
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/include/
+LOCAL_CFLAGS := $(PRIVATE_LOCAL_CFLAGS)
+LOCAL_VENDOR_MODULE := true
+
+include $(BUILD_EXECUTABLE)
+
+#
 # bcmserver
 #
 
